@@ -69,7 +69,7 @@ a:active {
 }
 .button {
   display: inline-block;
-  color: #ffffff;
+  background-color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
