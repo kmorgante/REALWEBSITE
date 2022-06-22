@@ -3,6 +3,10 @@ Colors used:
 Primary Color (Black): #000000;
 Secondary Color (White): #FFFFFF;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000000;
   font-family: 'Inria Serif', serif;
@@ -14,6 +18,38 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
 }
+
+header {
+  background-color: #4a4a4a;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.52);
+  position: relative;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.profile {
+  max-width: 400px;
+}
+
+.social {
+  max-width: 35px;
+}
+
+.footer {
+  text-align: center;
+}
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -33,6 +69,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 
 h4 {
@@ -46,14 +83,20 @@ img {
 }
 
 a {
-  color: #fff7f50;
+  color: #000000;
   text-decoration: none;
   /* No underlining */
 }
 
-a:visited {
+nav> ul > li > a:visited {
   /* visited link */
-  color: #ff7f50;
+  padding: 0 15px;
+  display: inline-block;
+  width: 100%
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff
 }
 
 a:hover,
@@ -65,8 +108,9 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #994c30;
+  color: #ffffff;
 }
+
 .button {
   display: inline-block;
   background-color: #ffffff;
@@ -99,4 +143,31 @@ a:active {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  margin: 25px 0;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+
+#hero {
+  background-color: #4a4a4a;
 }
