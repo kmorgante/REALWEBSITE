@@ -21,10 +21,9 @@ body {
 
 header {
   background-color: #4a4a4a;
-  text-align: center;
-  padding: 99px 0px 0px 0px;
-  box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.52);
   position: relative;
+    padding: 10px 0 4px;
+  box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.52);
 }
 
 #hero {
@@ -82,18 +81,32 @@ img {
   width: 100%;
 }
 
+.logo {
+  max-width: 150px;
+  margin-top: 10px;
+}
+
 a {
   color: #000000;
   text-decoration: none;
   /* No underlining */
 }
-nav> ul > li > a:{
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+nav> ul > li > a{
   /* navigation */
   padding: 0 15px;
-  display: inline-block;
   width: 100%
   text-transform: uppercase;
-  text-align: center;
   font-weight: 700;
   color: #ffffff
 }
@@ -106,7 +119,7 @@ nav> ul > li > a:visited {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  color: #ffffff
+  color: #ffffff;
 }
 
 a:hover,
@@ -170,17 +183,52 @@ a:active {
   text-align: left;
 }
 
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
-}
 
 #hero {
   background-color: #4a4a4a;
 }
+
+ul.social-media-list > a {
+    padding: 5px;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+}
+
+ul.social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+ul.social-media-list li {
+    display: inline-block;
+}
+ul.social-media-list li {
+    display: inline-block;
+    margin: 2px;
+}
+
+      nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+}
+
+
+
+
 
 /* ==============================
 Medium devices (640px and larger)
