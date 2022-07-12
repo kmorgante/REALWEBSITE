@@ -10,7 +10,7 @@ Secondary Color (White): #FFFFFF;
 body {
   background-color: #000000;
   font-family: 'Inria Serif', serif;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size to 16px */
   font-weight: 300;
   /* Sets the font weight to 300 */
@@ -20,17 +20,10 @@ body {
 }
 
 header {
-  background-color: #4a4a4a;
+  background-color: #000000;
   position: relative;
     padding: 10px 0 4px;
   box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.52);
-}
-
-#hero {
-  background-color: #ffe4c4;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
 }
 
 .logo {
@@ -119,7 +112,7 @@ nav> ul > li > a:visited {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  color: #ffffff;
+  color: #cc6540;
 }
 
 a:hover,
@@ -183,11 +176,14 @@ a:active {
   text-align: left;
 }
 
-
-#hero {
-  
+#hero span {
+  display: block;
   background-color: #000000;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
 }
+
 
 ul.social-media-list > a {
     padding: 5px;
@@ -227,9 +223,9 @@ ul.social-media-list li {
   }
 }
 
-
-
-
+[class*="col-"] {
+  float: left;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -245,6 +241,17 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 }
 
 /* ==============================
