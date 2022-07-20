@@ -75,8 +75,7 @@ img {
 }
 
 .logo {
-  max-width: 150px;
-  margin-top: 10px;
+  max-width: 250px;
 }
 
 a {
@@ -273,12 +272,16 @@ nav {
   animation-timing-function: linear;
 }
 
-.waves {
-animation-duration: 30s;
-animation-name: waves-move;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: linear;
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 
@@ -293,9 +296,14 @@ animation-timing-function: linear;
   height: auto;
 }
 
-@keyframes waves-move {
+@keyframes cloud-move {
   from {transform: translate(0,50px);}
   to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
 }
 
 }
