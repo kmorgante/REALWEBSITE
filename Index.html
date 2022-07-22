@@ -11,15 +11,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <!-- insert fontawesome -->
+  <link href="/your_path_to_version_6_files/css/all.css" rel="stylesheet">
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
   <!-- <! FOR THE HEADER - -> -->
   <header>
     <div class="container">
-
+      <div class="navtoggle" id="myNavtoggle">
         <img src="img/logo.png" alt="Kelsey Morgante Logo" class="logo">
 
         <!-- <! FOR THE NAVIGATION - -> -->
@@ -28,6 +31,7 @@
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0)" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
           </ul>
         </nav>
 
@@ -766,7 +770,9 @@
     </svg>
       </picture>
     </div>
+    <!-- end column -->
       <div class="column col-md-6 col-lg-5">
+        <!-- open new column -->
         <h3>CSS Animation</h3>
       <!-- Heading for the first project -->
       <p>
@@ -778,7 +784,10 @@
     <!--end column-->
   </div>
   <!-- end row -->
-
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script src="JS/ scripts.js."></script>
 
 </body>
