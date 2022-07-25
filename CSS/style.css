@@ -227,10 +227,6 @@ ul.social-media-list li {
   }
 }
 
-[class*="col-"] {
-  float: left;
-}
-
 
 
 /* Elements to animate */
@@ -279,6 +275,10 @@ ul.social-media-list li {
 
 }
 
+
+[class*="col-"] {
+  float: left;
+}
 
 /* ==============================
 Medium devices (640px and larger)
