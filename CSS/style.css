@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #000000;
   font-family: 'Open sans', serif;
@@ -15,28 +17,33 @@ body {
   /* Sets the line-height to 1.6 * the font-size */
   color: #ffffff;
 }
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.2;
 }
+
 h1 {
   font-family: 'Poiret One', sans-serif;
   font-size: 2.25em;
   font-weight: 700;
 }
+
 h2 {
   font-family: 'Poiret One', sans-serif;
   font-size: 2.25em;
   font-weight: 700;
   text-align: center;
 }
+
 h3 {
   font-family: 'Poiret One', sans-serif;
   font-size: 1.5em;
   font-weight: 500;
 }
+
 h4 {
   font-family: 'Poiret One', sans-serif;
   font-size: 1.35em;
@@ -53,65 +60,75 @@ a {
   color: #000000;
   text-decoration: none;
 }
+
 a:visited {
-  color: #fff;
+  color: #ffffff;
 }
+
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #4e8e41;
+  color: #ffffff;
 }
 
 /*buttons*/
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #767676;
   /* needed to override the default link color */
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #ffffff;
   /* width of the border, type, color */
   transition-duration: 0.2s;
   transition-property: opacity;
 }
+
 .button:hover,
 .button.readmore:focus {
   opacity: 0.8;
   text-decoration: none;
 }
+
 .button:active {
   background-color: #ffffff;
 }
+
 .button.readmore {
   color: #ffffff;
 }
+
 .button.readmore.underconstruction {
   background-color: darkgray;
   pointer-events: none;
   border-bottom: 2px solid gray;
 }
+
 .button.contact {
   background-color: transparent;
-text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #FFE8FB;
 }
+
 .button.contact:hover,
 .button.contact:focus {
-background-color: #ff7f50;
+  background-color: #ffe8fb;
   color: #ffffff;
 }
+
 .button.contact:active {
-  background-color: #cc6540;
+  background-color: #ffe8fb;
   color: #ffffff;
 }
+
 /* Layout styling */
 /* header styling */
 header {
@@ -123,21 +140,23 @@ header {
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   padding: 10px 0 4px;
 }
+
 .container {
   padding: 0 15px;
 }
+
 #work .row {
-  margin: 25px 15px; /* 25 px top and bottom, 15 left and right */
+  margin: 25px 15px;
+  /* 25 px top and bottom, 15 left and right */
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
- .logo {
-    max-width: 250px;
-  }
 
+.logo {
+  max-width: 250px;
+}
 
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -145,22 +164,19 @@ nav > ul {
   text-align: center;
 }
 
-
-nav> ul > li > a{
+nav>ul>li>a {
   /* navigation */
   padding: 0 15px;
-  width: 100%
-  text-transform: uppercase;
+  width: 100% text-transform: uppercase;
   font-weight: 700;
   color: #ffffff
 }
 
-nav> ul > li > a:visited {
+nav>ul>li>a:visited {
   /* visited link */
   padding: 0 15px;
   display: inline-block;
-  width: 100%
-  text-transform: uppercase;
+  width: 100% text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   color: #ffffff;
@@ -178,25 +194,29 @@ a:active {
   color: #ffffff;
 }
 
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
+
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -205,48 +225,56 @@ a:active {
   padding-right: 0;
 }
 
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
   color: #cc6540;
 }
-nav > ul > li > a:active {
+
+nav>ul>li>a:active {
   color: #ffffff;
 }
+
 nav {
   display: inline-block;
   width: 100%;
 }
+
 /*main styling (start main section below header)*/
 main {
   padding-top: 98px;
 }
+
 /* hero styling*/
 #hero {
- display: block;
+  display: block;
   background-color: #000000;
   padding: 70px 0;
   width: 100%;
   text-align: center;
 }
+
 #hero h1 {
   text-align: center;
   margin: 0;
 }
+
 #hero h2 {
   text-align: center;
   margin: 15px 0;
 }
+
 #hero p {
   text-align: center;
 }
+
 /* footer styling */
 .social {
   max-width: 35px;
@@ -256,27 +284,27 @@ main {
   text-align: center;
 }
 
-ul.social-media-list > a {
-    padding: 5px;
-    border-radius: 5px;
-    width: 36px;
-    height: 36px;
+ul.social-media-list>a {
+  padding: 5px;
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
 }
 
 ul.social-media-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    }
-
-ul.social-media-list li {
-    display: inline-block;
-}
-ul.social-media-list li {
-    display: inline-block;
-    margin: 2px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+ul.social-media-list li {
+  display: inline-block;
+}
+
+ul.social-media-list li {
+  display: inline-block;
+  margin: 2px;
+}
 
 .button.contact {
   background-color: transparent;
@@ -290,28 +318,29 @@ ul.social-media-list li {
   color: #ffffff;
 }
 
-
-
-
 /* about page styling */
 .aboutme h2 {
   text-align: center;
 }
+
 .abouttitle {
   text-align: center;
   padding: px 10;
   display: inline-block;
   width: 100%;
 }
+
 /* designery styling */
 .designery {
   background-color: black;
 }
+
 .designery h2 {
   font-weight: 500;
   font-size: 1.75em;
   margin: 10px 0;
 }
+
 .designery.intro {
   text-align: center;
   padding: 0px 15px 5px 15px;
@@ -320,153 +349,190 @@ ul.social-media-list li {
   display: inline-block;
   width: 100%;
 }
+
 .designery.intro h1 {
   font-weight: 300;
   font-size: 3em;
   margin: 10px 0 0 0;
 }
+
 .designery.intro h2 {
   font-weight: 100;
   font-size: 1.25em;
   margin: 10px 0;
 }
+
 .designery.light {
   padding: 10px 15px;
   background-color: #f2e7df;
   color: black;
 }
+
 .designery.light.myrole h2 {
   margin: 0;
   padding: 10px 0 0 0;
 }
+
 .designery.light.iLearned h3 {
   font-weight: 500;
   font-size: 1.2em;
 }
+
 .designery.black {
   padding: 10px 15px;
   background-color: black;
   color: white;
 }
+
 .userflow {
   display: block;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .designery.light.principles {
   text-align: center;
 }
+
 .designery.black.lowfidel p {
   text-align: center;
 }
+
 .designery.black.challenge h3 {
   font-weight: 300;
   font-size: 1.25em;
 }
+
 .designery.black.challenge p {
   text-align: center;
   font-size: 0.75em;
   margin: 0;
 }
+
 .designery.light.visual img {
   display: block;
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .icons {
   width: 70px;
   height: auto;
 }
+
 .designery.light.visual h4 {
   text-align: center;
 }
+
 .designery.light.testing h3 {
   color: #7d330d;
 }
+
 .finaldesign {
   text-align: center;
 }
+
 .finaldesign h1 {
   margin: 0;
   padding: 20px 0;
   font-weight: 300;
   font-size: 3em;
 }
+
 .finaldeisgn.intro {
   background-color: black;
   color: white;
 }
+
 .finaldesign.black {
   padding: 10px 15px;
   background-color: black;
   color: white;
 }
+
 .finaldesign.black h2 {
   font-weight: 300;
 }
+
 .finaldesign.light {
   padding: 10px 15px;
   background-color: #f2e7df;
 }
+
 .finaldesign.light h2 {
   font-weight: 300;
 }
+
 .solution1 {
   max-width: 300px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .solution2 {
   max-width: 300px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+
 .row.solution::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .col-sm-6 {
   width: 35%;
   display: inline-block;
 }
+
 .scaledown70 {
   width: 70%;
 }
+
 .scaledown50 {
   width: 50%;
 }
+
 .scaledown30 {
   width: 30%;
 }
+
 .row.trends {
   padding-top: 20px;
 }
+
 [class*="col-"] {
   float: left;
   padding-left: 10px;
 }
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .col-sm-6 {
   width: 50%;
 }
+
 .col-sm-12 {
   width: 100%;
 }
+
 .visual2 img {
   width: 50%;
 }
+
 .profilepicture {
   width: 70%;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -475,71 +541,91 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  nav > ul {
+
+  nav>ul {
     margin: 1em 0;
   }
-  nav > ul > li {
+
+  nav>ul>li {
     display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
+
   .logo {
     margin-top: 0;
   }
+
   main {
     padding-top: 91px;
   }
+
   .profilepicture {
     width: 30%;
   }
+
   #hero span {
     display: block;
   }
+
   [class*="col-"] {
     float: left;
     padding-left: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
+
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-6 {
     width: 50%;
     padding-right: 20px;
   }
+
   .col-md-6.image {
     text-align: right;
   }
+
   .col-md-6 img {
     max-width: 470px;
   }
+
   .col-md-6 svg {
     max-width: 470px;
   }
+
   .userflow {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
   .solution1 {
     float: right;
   }
+
   .solution2 {
     float: left;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -547,24 +633,29 @@ Large devices (1024px or larger)
   .col-lg-5 {
     width: 40%;
   }
+
   .col-lg-2 {
     width: 15%;
   }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
   [class*="col-"] {
     float: left;
     padding-left: 10px;
   }
+
   .row::after {
     content: "";
     clear: both;
     display: table;
   }
 }
+
 /* ==============================
 Berlin Illustration Animation Example
 ================================= */
@@ -573,39 +664,49 @@ Berlin Illustration Animation Example
   max-width: 100%;
   height: auto;
 }
+
 @keyframes color-change {
   from {
     fill: #edc655;
   }
+
   to {
     fill: #f76414;
   }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /* ==============================
 Music Illustration Animation Example
 ================================= */
@@ -614,25 +715,31 @@ Music Illustration Animation Example
   max-width: 100%;
   height: auto;
 }
+
 @keyframes stars-grow {
   from {
     transform: scale(1, 1);
   }
+
   to {
     transform: scale(1.1, 1.1);
   }
 }
+
 .stars {
   animation: 1s stars-grow infinite alternate linear;
 }
+
 @keyframes notes-rotate {
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(10deg);
   }
 }
+
 .music-notes {
   animation: 1s notes-rotate infinite alternate linear;
 }
